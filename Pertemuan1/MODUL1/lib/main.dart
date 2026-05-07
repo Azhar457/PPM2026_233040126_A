@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'latihan_widget.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -74,7 +73,9 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Latihan1Page()),
+                      MaterialPageRoute(
+                        builder: (context) => const Latihan1Page(),
+                      ),
                     );
                   },
                   child: const Text('Latihan 1'),
@@ -84,7 +85,9 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Latihan2Page()),
+                      MaterialPageRoute(
+                        builder: (context) => const Latihan2Page(),
+                      ),
                     );
                   },
                   child: const Text('Latihan 2'),
@@ -97,4 +100,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
