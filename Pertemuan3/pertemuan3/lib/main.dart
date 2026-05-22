@@ -274,7 +274,7 @@ class _TambahCatatanPageState extends State<TambahCatatanPage> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
-              value: _kategori,
+              initialValue: _kategori,
               decoration: const InputDecoration(
                 labelText: 'Kategori',
                 prefixIcon: Icon(Icons.category),
