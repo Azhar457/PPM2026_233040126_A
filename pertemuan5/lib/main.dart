@@ -385,11 +385,11 @@ class _CatatanFormPageState extends State<CatatanFormPage> {
                 prefixIcon: Icon(Icons.title),
                 border: OutlineInputBorder(),
               ),
-              // validator: (v) {
-              //   if (v == null || v.trim().isEmpty) return 'Judul wajib diisi';
-              //   if (v.trim().length < 3) return 'Minimal 3 karakter';
-              //   return null;
-              // },
+              validator: (v) {
+                if (v == null || v.trim().isEmpty) return 'Judul wajib diisi';
+                if (v.trim().length < 3) return 'Minimal 3 karakter';
+                return null;
+              },
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
@@ -413,8 +413,8 @@ class _CatatanFormPageState extends State<CatatanFormPage> {
                 prefixIcon: Icon(Icons.notes),
                 border: OutlineInputBorder(),
               ),
-              // validator: (v) =>
-              //     (v == null || v.trim().isEmpty) ? 'Isi wajib diisi' : null,
+              validator: (v) =>
+                  (v == null || v.trim().isEmpty) ? 'Isi wajib diisi' : null,
             ),
             const SizedBox(height: 24),
             _menyimpan
